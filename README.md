@@ -35,7 +35,7 @@ Para su ejecución, puede utilizar cualquier tipo de servidor web, por ejemplo [
 Una vez realizado los 2 pasos anteriores, deberá:
 
 1. Abrir la app web en el navegador y luego abrir la consola del navegador (`F12`).
-2. Verificar que la consola muestre el mensaje: `Respuesta de la suscripción: {message: "success"}`. Este mensaje se mostrará solo cuando se registre el service worker. Si ya está registrado y se actualiza la página, no se mostrará, lo cual no significa que esté mal.
+2. Verificar que la consola muestre el mensaje: `Respuesta de la suscripción: {message: "success"}`. Este mensaje se mostrará solo cuando se registre el service worker. Si ya está registrado y se actualiza la página, no se mostrará, lo cual **no** significa que esté mal.
 3. Verificar que la caché de la app web (`my-cache`) contenga el elemento `datos.json`.
 4. Abrir otra pestaña del navegador (`ctrl+t`) u otra instancia (`ctrl+n`).
 5. En esta nueva pestaña, realizar la solicitud de envío de notificación al servidor NodeJS con la uri [http://localhost:4000/send-notification](http://localhost:4000/send-notification).
