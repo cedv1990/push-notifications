@@ -47,4 +47,4 @@ Una vez realizado los 2 pasos anteriores, deberá:
 ### Notas:
 
 - Puede probar la ejecución del punto 5 sin tener la app web abierta, el service worker igual estará escuchando las notificaciones push, lo que hará que el punto 8 se pueda verificar al abrir de nuevo la app web.
-- Para reiniciar la prueba, deberá quitar el registro del Service Worker y limpiar la caché de la app web y volver al paso 1.
+- Para reiniciar la prueba, deberá quitar el registro del Service Worker, limpiar la caché de la app web y volver al paso 1.
