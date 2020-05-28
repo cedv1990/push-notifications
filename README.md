@@ -3,8 +3,8 @@
 El siguiente ejemplo muestra una forma fácil de implementar notificaciones push mediante el uso de [NodeJS](https://nodejs.org/es/) y [Service Workers](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API).
 
 Encontrará 2 proyectos:
-+ [server](tree/master/server)
-+ [client](tree/master/client)
++ [server](server)
++ [client](client)
 
 ## 1. Arrancar el servidor NodeJS
 
@@ -12,15 +12,15 @@ Este proyecto creará un servidor en [NodeJS](https://nodejs.org/es/) capaz de g
 
 Una vez descargado el proyecto, deberá ejecutar los siguientes comandos:
 
-```powershell
-PS ...> cd server
-PS ...\server> npm install
-PS ...\server> node index.js
+```cmd
+...> cd server
+...\server> npm install
+...\server> node index.js
 ```
 
 ... luego, si todo sale bien, mostrará un aviso que la aplicación NodeJS ya está corriendo ([http://localhost:4000](http://localhost:4000)):
 
-```powershell
+```cmd
 Ejemplo de aplicación para notificaciones push, corriendo en http://localhost:4000
 ```
 
