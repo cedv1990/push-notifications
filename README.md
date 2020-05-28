@@ -6,7 +6,7 @@ Encontrará 2 proyectos:
 + [server](server)
 + [client](client)
 
-## 1. Arrancar el servidor NodeJS
+## 1. Iniciar el servidor NodeJS
 
 Este proyecto creará un servidor en [NodeJS](https://nodejs.org/es/) capaz de generar [notificaciones push](https://es.wikipedia.org/wiki/Tecnolog%C3%ADa_push).
 
@@ -24,7 +24,7 @@ Una vez descargado el proyecto, deberá ejecutar los siguientes comandos:
 Ejemplo de aplicación para notificaciones push, corriendo en http://localhost:4000
 ```
 
-## Proyecto client
+## 2. Iniciar el sitio web (client)
 
 Este proyecto consta de una página (*index.html*), una hoja de estilos muy sencilla (en verdad muy sencilla, *index.css*), 3 archivos javascript (*index.js, service-functions.js, service.js*) y un archivo JSON (*datos.json*).
 
