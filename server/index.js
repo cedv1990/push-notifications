@@ -25,7 +25,7 @@ app.post('/save-subscription', async (req, res) => {
 app.get('/send-notification', async (req, res) => {
     const subscription = await getSubscription();
 
-    const message = JSON.stringify({ cmd: 'consulta-modulos' });
+    const message = JSON.stringify({ cmd: 'my-command' });
     
     sendPushNotification(subscription, message);
     res.json({ message: 'message sent' });

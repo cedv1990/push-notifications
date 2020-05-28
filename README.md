@@ -40,7 +40,7 @@ Una vez realizado los 2 pasos anteriores, deberá:
 4. Abrir otra pestaña del navegador (`ctrl+t`) u otra instancia (`ctrl+n`).
 5. En esta nueva pestaña, realizar la solicitud de envío de notificación al servidor NodeJS con la uri [http://localhost:4000/send-notification](http://localhost:4000/send-notification).
 6. Volver a la pestaña de la app web. Es probable que requiera conceder accesos a la web de recibir notificaciones.
-7. Si la app web ya tiene permisos de notificaciones, al realizar el paso 5, debió generarse una notificación de escritorio en su pc.
+7. Si la app web ya tiene permisos de notificaciones, al realizar el paso 5, debió generarse una notificación de escritorio en su pc con la siguiente información: `Título: "Mensaje desde node", Cuerpo: "Comando enviado: my-command"`
 8. Verificar que la caché de la app web (`my-cache`) ya no contenga el elemento `datos.json`.
 9. Si el punto 8 fue correcto, la notificación push funcionó!
 
