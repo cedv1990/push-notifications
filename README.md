@@ -35,7 +35,7 @@ Una vez descargado el proyecto, deberá seguir estos pasos:
 
 2. Ahora, debe copiar la llave pública y pegarla en la propiedad `publicKey` en el archivo [push-manager.js](server/push-manager.js). Pegar esta llave también en la constante `base64String` del archivo [service-functions.js](client/service-functions.js).
 
-3. Luego, debe copiar la llave privada y pegarla en la propiedad `privateKey` en el archivo `push-manager.js`.
+3. Luego, debe copiar la llave privada y pegarla en la propiedad `privateKey` en el archivo [push-manager.js](server/push-manager.js).
 
 4. Ejecutar los comandos de inicio del servidor NodeJS:
 
