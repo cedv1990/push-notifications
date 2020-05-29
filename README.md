@@ -10,19 +10,45 @@ Encontrará 2 proyectos:
 
 Este proyecto creará un servidor en [NodeJS](https://nodejs.org/es/) capaz de generar [notificaciones push](https://es.wikipedia.org/wiki/Tecnolog%C3%ADa_push).
 
-Una vez descargado el proyecto, deberá ejecutar los siguientes comandos:
+Una vez descargado el proyecto, deberá seguir estos pasos:
 
-```cmd
-...> cd server
-...\server> npm install
-...\server> node index.js
-```
+1. Crear las llaves que se usarán para suscribir los clientes al servidor.
 
-... luego, si todo sale bien, mostrará un aviso que la aplicación NodeJS ya está corriendo ([http://localhost:4000](http://localhost:4000)):
+    ```cmd
+    ...> cd server
+    ...\server> web-push generate-vapid-keys
+    ```
+    El comando anterior arrojará algo como esto:
 
-```cmd
-Ejemplo de aplicación para notificaciones push, corriendo en http://localhost:4000
-```
+    ```cmd
+    =======================================
+
+    Public key: 
+    BABU69DGxW0-rzUdEYDGG2xHAMQROl5RV8QD6Zuxjdoj5RBOcZKGLKw4D_YglTMBjyuL5rdTPyl_I64rnKKuKkc
+
+    Private key:
+    SWDFhVNnV2clDdQiFls2k7AWtr3dkK5oU5YWdaNPVsM
+
+    =======================================
+    ```
+    **Nota:** No use estas llaves, genere las propias para su ejercicio.
+
+2. Ahora, debe copiar la llave pública y pegarla en la propiedad `publicKey` en el archivo [push-manager.js](server/push-manager.js). Pegar esta llave también en la constante `base64String` del archivo [service-functions.js](client/service-functions.js).
+
+3. Luego, debe copiar la llave privada y pegarla en la propiedad `privateKey` en el archivo `push-manager.js`.
+
+4. Ejecutar los comandos de inicio del servidor NodeJS:
+
+    ```cmd
+    ...\server> npm install
+    ...\server> node index.js
+    ```
+
+5. Si todo sale bien, mostrará un aviso que la aplicación NodeJS ya está corriendo en [http://localhost:4000](http://localhost:4000):
+
+    ```cmd
+    Ejemplo de aplicación para notificaciones push, corriendo en http://localhost:4000
+    ```
 
 ## 2. Iniciar el sitio web (client)
 
