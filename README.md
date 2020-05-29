@@ -20,7 +20,7 @@ Una vez descargado el proyecto, deberá seguir estos pasos:
     ```
     El comando anterior arrojará algo como esto:
 
-    ```cmd
+    ```text
     =======================================
 
     Public key: 
